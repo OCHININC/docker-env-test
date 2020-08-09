@@ -4,5 +4,5 @@ services:
     command: tail -f /dev/null
     container_name: test-container
     environment:
-      CQL_EXECUTION_DATA_SERVICE: "${CQL_EXECUTION_DATA_SERVICE:-https://apps.hdap.gatech.edu/gt-fhir/fhir/}"
+      TEST_ENV: "${TEST_ENV:-default}"
     image: alpine:latest
